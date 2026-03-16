@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    font-family:Arial,Helvetica,sans-serif;
+}
+body{
+    background-image: url(main.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 100vh;
+}
+.loginPage{
+    height: 500px;
+    width: 400px;
+    background-color: #192124e6;
+    margin-right: 80px;
+    border-radius: 10px;
+}
+.gymLogo{
+    background-image: url(logo.png);
+    height: 65px;
+    width: 80px;
+    background-size: cover;
+}
+.gymTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.gymName{
+    color: white;
+    font-weight: 700;
+    font-size: 22pt;
+    margin-left: 10px;
+}
+.description{
+    color: #0bcbd9;
+    font-weight: 600;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+.welcome{
+    font-size: 16pt;
+    font-weight: 550;
+    color: white;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.signIn{
+    font-size: 12pt;
+    color: #959a9c;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.inputBox1{
+    margin-left: 20px;
+    margin-top: 40px;
+    height: 40px;
+    width: 340px;
+    padding-left: 10px;
+    background-color: #2c3439;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+#mail{
+    height: 20px;
+    width: 300px;
+    border: 0;
+    outline: 0;
+    margin-left: 10px;
+    background-color: transparent;
+    color: white;
+}
+.inputBox1 i{
+ color: #0bcbd9;
+}
+
+.inputBox2{
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 40px;
+    width: 340px;
+    padding-left: 10px;
+    background-color: #2c3439;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+#password{
+    height: 20px;
+    width: 300px;
+    border: 0;
+    outline: 0;
+    margin-left: 10px;
+    background-color: transparent;
+    color: white;
+}
+.inputBox2 i{
+ color: #0bcbd9;
+}
+.inputBox1:hover{
+    background-color: #404748;
+    transition: ease-in-out 0.3s;
+}
+.inputBox2:hover{
+    background-color: #404748;
+    transition: ease-in-out 0.3s;
+}
+.loginButton{
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 40px;
+    width: 350px;
+    background-color: #0bcbd9;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 14pt;
+    cursor: pointer;
+}
+.loginButton:hover{
+    background-color: #0bcbd9db;
+    transition: ease-in-out 0.3s;
+}
+.forgot{
+    display: flex;
+    justify-self: right;
+    margin-top: 20px;
+    margin-right: 40px;
+    color: #959a9c;
+    font-size: 10pt;
+    cursor: pointer;
+}
+.noAccount{
+    color: #959a9c;
+    font-size: 12pt;
+    display: flex;
+    justify-self: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #959a9c;
+}
+.noAccount span{
+    margin-left: 5px;
+    font-size: 12pt;
+    font-weight: 580;
+    color: #0bcbd9;
+    cursor: pointer;
+}
