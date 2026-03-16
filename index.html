@@ -6,9 +6,34 @@
     <title>login Page</title>
     <script src="https://kit.fontawesome.com/92b1a37389.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <div class="loginPage">
+    <div class="card-container">
+    <div class="card" id="card">
+        <div class="loginPage front">
+            <div class="gymTitle">
+                <div class="gymLogo"></div>
+                <div class="title">
+                    <div class="gymName">ENDURANCE</div>
+                    <div class="description">Gym Management System</div>
+                </div>
+            </div>
+            <div class="welcome">Welcome Back!</div>
+            <div class="signIn">Please login to your account</div>
+            <div class="inputBox1">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Email Address" name="Email Address" id="mail" class="textBox">
+            </div>
+            <div class="inputBox2">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Password" name="Password" id="password" class="textBox">
+            </div>
+            <div class="loginButton">Login</div>
+            <div class="forgot">Forgot Password?</div>
+            <div class="noAccount">Don't have an account?<span onclick="flipCard()">Sign up</span></div>
+        </div>
+        <div class="loginPage back">
         <div class="gymTitle">
             <div class="gymLogo"></div>
             <div class="title">
@@ -16,19 +41,31 @@
                 <div class="description">Gym Management System</div>
             </div>
         </div>
-        <div class="welcome">Welcome Back!</div>
-        <div class="signIn">Please login to your account</div>
-        <div class="inputBox1">
+        <div class="welcome">Join Us!</div>
+        <div class="signIn">Create your account</div>
+        <div class="signInBox1">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Full Name" class="textBox">
+        </div>
+
+        <div class="signInBox2">
             <i class="fa-solid fa-envelope"></i>
-            <input type="email" placeholder="Email Address" name="Email Address" id="mail">
+            <input type="email" placeholder="Email Address" class="textBox" >
         </div>
-        <div class="inputBox2">
+
+        <div class="signInBox3">
             <i class="fa-solid fa-lock"></i>
-            <input type="password" placeholder="Password" name="Password" id="password">
+            <input type="password" placeholder="Password" class="textBox">
         </div>
-        <div class="loginButton">Login</div>
-        <div class="forgot">Forgot Password?</div>
-        <div class="noAccount">Don't have an account?<span>Sign up</span></div>
+
+        <div class="loginButton">Sign Up</div>
+
+        <div class="noAccount">
+            Already have an account?
+            <span onclick="flipCard()">Login</span>
+        </div>
+    </div>
+    </div>
     </div>
 </body>
 </html>
