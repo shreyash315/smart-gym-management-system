@@ -123,6 +123,7 @@ body{
     font-weight: 700;
     font-size: 14pt;
     cursor: pointer;
+    text-decoration: none;
 }
 .loginButton:hover{
     background-color: #0bcbd9db;

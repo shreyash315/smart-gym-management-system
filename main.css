@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    font-family:Arial,Helvetica,sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.back{
+    background-image: url(main.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: -10;
+}
+
+/* navigation Bar */
+header{
+    height: 60px;
+    background: linear-gradient(135deg,#0f0f11 0%,#1a1b1f 50%,#2a1f1c 100%);
+    display: flex;
+    position: fixed;
+    width: 1000px;
+    margin-top: 20px;
+    display: flex;
+    justify-self: center;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    z-index: 100;
+}
+.nav_name{
+    height: 60px;
+    display: flex;
+    color: white;
+    align-items: center;
+    font-weight: 600;
+}
+.icon{
+    height: 40px;
+    width: 50px;
+    background-size: cover;
+    padding: 15px 20px 10px 20px;
+}
+.nav_button{
+    margin-left: auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 500px;
+}
+.nav_button a{
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+.nav_button a::after{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 6px;
+    width: 0;
+    background-color: #0bcbd9;
+    margin-top: 6px;
+    transition: 0.5s;
+}
+.nav_button a:hover::after{
+    width: 100%;
+}
+.nav_button a:hover{
+    color: #0bcbd9;
+    transition: all ease-in-out 250ms;
+}
+.description{
+    color: #0bcbd9;
+}
+
+.trainerWorking,.memberDue,.memberWorking{
+    height: 550px;
+    width: 400px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);      
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+.dashSection{
+    padding-top: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.homeTilte{
+    justify-self: center;
+    margin-top: 20px;
+    color: #eae7ed;
+}
+.nameBox{
+    justify-self: center;
+    margin-top: 15px ;
+    padding: 10px 50px 10px 50px;
+    color: black;
+    font-weight: 500;
+    text-shadow: 0 0 10px rgba(0,0,0,0.6);
+    width: 250px;
+    height: 20px;
+    text-align: center;
+    background-color: #fffcff;
+    border-radius: 16px;
+    /* background: rgba(255, 255, 255, 0.311);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);      
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.08); */
+}
+.memberWorking h4{
+    text-align: left;
+}
+.memberWorking ~ span{
+    justify-self: right;
+}
+.dueDate{
+    color: rgb(162, 31, 31);
+    padding-left: 20px;
+}
+.Equipments{
+    height: 100vh;
+}
+.titleSection{
+    padding-top: 90px;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 800;
+      background: linear-gradient(
+    90deg,
+    #4facfe,
+    #00f7ff,
+    #38f9d7
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.abouthr{
+    margin-top: 15px;
+    height: 5px;
+    width: 100px;
+    background:#00f7ff;
+    display: flex;
+    justify-self: center;
+}
+.sectionEquip{
+    display: flex;
+    justify-content: space-evenly;
+}
+.equipmentList{
+    margin-top: 50px;
+    height: 450px;
+    width: 550px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);      
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+.equipmentList h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-self: center;
+    color: #eae7ed;
+}
+.listEquip ul{
+    list-style-type: none;
+    margin: 0;            
+    padding: 0; 
+}
+.listEquip li{
+    justify-self: center;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    height: 30px;
+    width: 400px;
+    background-color: #fffcff;
+    border-radius: 16px;
+}
+.listEquip li{
+    display: flex;
+    justify-content: space-between; /* pushes content to left & right */
+    align-items: center;
+
+    margin-top: 10px;
+    padding: 10px 20px;
+
+    height: 30px;
+    width: 400px;
+
+    background-color: #fffcff;
+    border-radius: 16px;
+}
