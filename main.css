@@ -202,3 +202,25 @@ header{
     background-color: #fffcff;
     border-radius: 16px;
 }
+.Trainers{
+    height: 100vh;
+}
+.trainerinfo{
+    height: 250px;
+    width: 350px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);      
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.08); 
+}
+.imageTrainer{
+    height: 200px;
+    width: 400px;
+    background-image: url(trainer1.jpg);
+    background-size: cover;
+    margin: 20px 0px 0px 20px;
+}
+.trainerinfo{
+    display: flex;
+}

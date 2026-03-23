@@ -21,6 +21,25 @@
             </div>
             <div class="welcome">Welcome Back!</div>
             <div class="signIn">Please login to your account</div>
+            <div class="role-dropdown">
+                <div class="selected" onclick="toggleDropdown()">
+                    <i class="fa-solid fa-shield"></i>
+                    <span id="selectedRole">Login as Admin</span>
+                    <i class="fa-solid fa-chevron-down arrow"></i>
+                </div>
+
+                <div class="options" id="dropdownOptions">
+                    <div onclick="selectRole('Admin', 'fa-shield')">
+                        <i class="fa-solid fa-shield"></i> Login as Admin
+                    </div>
+                    <div onclick="selectRole('Manager', 'fa-briefcase')">
+                        <i class="fa-solid fa-briefcase"></i> Login as Manager
+                    </div>
+                    <div onclick="selectRole('Member', 'fa-user')">
+                        <i class="fa-solid fa-user"></i> Login as Member
+                    </div>
+                </div>
+            </div>
             <div class="inputBox1">
                 <i class="fa-solid fa-envelope"></i>
                 <input type="email" placeholder="Email Address" name="Email Address" id="mail" class="textBox">
@@ -30,8 +49,25 @@
                 <input type="password" placeholder="Password" name="Password" id="password" class="textBox">
             </div>
             <a href="main.html" class="loginButton">Login</a>
-            <div class="forgot">Forgot Password?</div>
+            <div class="forgot" onclick="openForgot()">Forgot Password?</div>
             <div class="noAccount">Don't have an account?<span onclick="flipCard()">Sign up</span></div>
+        </div>
+        <!-- Forgot Password Modal -->
+        <div class="forgot-modal" id="forgotModal">
+            <div class="forgot-box">
+                <div class="forgot-title">Reset Password</div>
+                <div class="forgot-text">Enter your email to reset password</div>
+
+                <div class="forgot-input">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" placeholder="Email Address" class="textBox">
+                </div>
+
+                <div class="forgot-buttons">
+                    <button onclick="closeForgot()">Cancel</button>
+                    <button class="send-btn">Send Link</button>
+                </div>
+            </div>
         </div>
         <div class="loginPage back">
         <div class="gymTitle">
