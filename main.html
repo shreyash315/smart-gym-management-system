@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gym Managment System</title>
     <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
 </head>
 <body>
     <div class="back"></div>
@@ -15,100 +16,58 @@
             <div>ENDURANCE <span class="description">Gym Management System</span></div>
         </div>
         <div class="nav_button">
-            <a href="#sHome">Home</a> 
             <a href="#sEquipments">Equipments</a>
             <a href="#sTrainers">Trainers</a>
-            <a href="#sMembership">Membership</a>
+            <a href="#sSubscritions">Subscritions</a>
             <a href="#sAttendance">Attendance</a>
         </div>
+
     </header>
-    <section class="heroSection" id="sHome">
-        <div class="dashSection">
-            <div class="trainerWorking">
-                <h1 class="homeTilte">Trainer Working Now</h1>
-                <h4 class="nameBox">shreyash Gaikwad</h4>
-                <h4 class="nameBox">Ayush</h4>
-            </div>
-            <div class="memberDue">
-                <h1 class="homeTilte">Member Working Out</h1>
-                <h4 class="nameBox">shreyash Gaikwad</h4>
-                <h4 class="nameBox">Ayush</h4>
-            </div>
-            <div class="memberWorking">
-                <h1 class="homeTilte">Member Due</h1>
-                <h4 class="nameBox">shreyash Gaikwad <span class="dueDate">3 days left</span></h4>
-                <h4 class="nameBox">Ayush <span class="dueDate">0 days left</span></h4>
-            </div>
-        </div>
-    </section>
-    <section class="Equipments" id="sEquipments">
-        <div class="titleSection">
-           Equipments 
-        </div>
-        <div class="abouthr"></div>
-        <div class="sectionEquip">
-        <div class="equipmentList">
-                <h1>Equipment List</h1>
-            <div class="listEquip">
-                <ul>
-                    <li>Treadmills<span>7</span></li>
-                    <li>Bench Press<span>5</span></li>
-                    <li>squat Rack<span>3</span></li>
-                    <li>Dumbbells Rack<span>2</span></li>
-                    <li>Rowing Machines<span>6</span></li>
-                </ul>
-            </div>
-        </div>
-        <div class="equipmentList">
-            <h1>Activities Offered</h1>
-            <div class="listEquip">
-                <ul>
-                    <li>Weight Training</li>
-                    <li>Cardio</li>
-                    <li>CrossFit</li>
-                    <li>Yoga</li>
-                    <li>HIIT</li>
-                </ul>
-            </div>
-        </div>
-        </div>
-    </section>
-    <section class="Trainers" id="sTrainers">
-        <div class="titleSection">
-            Trainers
-        </div>
-        <div class="abouthr"></div>
-        <div class="trainerSection">
-            <div class="trainerList">
-                <div class="trainerinfo">
-                    <div class="imageTrainer"></div>
-                    <div class="trainerName">
-                        shreyash gaikwad
-                    </div>
-                    <div class="specfic">
-                        Strength Training
-                    </div>
-                    <div class="decipTrainer">
-                        Expert in strength
-                        and conditioning
-                    </div>
-                </div>
-                <div class="trainerinfo">
-                    <div class="imageTrainer"></div>
-                    <div class="trainerName">
-                        shreyash gaikwad
-                    </div>
-                    <div class="specfic">
-                        Strength Training
-                    </div>
-                    <div class="decipTrainer">
-                        Expert in strength
-                        and conditioning
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="sEquipments" class="Equipments">
+    <h1 class="gm_title">Equipment Maintenance</h1>
+    <div class="gm_glass">
+    <input id="gm_equipName" placeholder="Equipment Name">
+    <select id="gm_equipStatus">
+    <option>Working</option>
+    <option>Repair</option>
+    </select>
+    <button onclick="gm_addEquip()">Add</button>
+    <table>
+    <tr><th>Name</th><th>Status</th><th>Action</th></tr>
+    <tbody id="gm_equipList"></tbody>
+    </table>
+    </div>
+</section>
+<section id="sTrainers" class="Trainers">
+    <h1 class="gm_title">Member Subscription</h1>
+
+    <div class="gm_glass">
+    <input id="gm_memberName" placeholder="Name">
+    <input type="date" id="gm_startDate">
+    <input type="number" id="gm_days" placeholder="Days Plan">
+    <button onclick="gm_addMember()">Add</button>
+
+    <table>
+    <tr><th>Name</th><th>Days Left</th><th>Status</th></tr>
+    <tbody id="gm_memberList"></tbody>
+    </table>
+    </div>
+</section>
+<!-- TRAINERS -->
+<section id="sSubscritions" class="Subscritions">
+<h1 class="gm_title">Trainer Management</h1>
+
+<div class="gm_glass">
+<input id="gm_trainerName" placeholder="Trainer Name">
+<input id="gm_hours" placeholder="Working Hours">
+<input id="gm_payment" placeholder="Payment">
+<button onclick="gm_addTrainer()">Add</button>
+
+<table>
+<tr><th>Name</th><th>Hours</th><th>Payment</th></tr>
+<tbody id="gm_trainerList"></tbody>
+</table>
 </div>
+</section>
 </body>
 </html>
