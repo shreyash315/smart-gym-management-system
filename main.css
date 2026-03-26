@@ -179,7 +179,116 @@ text-shadow: 0 0 10px rgba(255,255,255,0.6);
 .gm_expired{
     color:red !important;
 }
-.Subscritions{
+.Subscritions ,.Attendance ,.Report,.history{
    height: 100vh;
     align-content: center; 
+}
+.ga_flex{
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    padding:20px;
+    border-radius:12px;
+    width:900px;
+    height: 60%;
+    margin-top: 20px;
+    justify-self: center;
+    justify-content: space-between;
+}
+#ga_time{
+    height: 30px;
+    width: 40%;
+    font-size: 14pt;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    padding: 0;
+    margin-top: 20px;
+}
+#ga_calories{
+    height: 30px;
+    width: 20%;
+    font-size: 14pt;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    margin: 0 10px 0 10px;
+}
+#ga_attendance{
+    height: 30px;
+    width: 20%;
+    font-size: 14pt;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+.ga_button{
+    padding:10px 15px;
+    background: #0bcbd9;
+    border:none;
+    border-radius:8px;
+    color:#FFFFFF;
+    cursor:pointer;
+    font-size: 12pt;
+}
+.ga_cards{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60PX;
+}
+.ga_card{
+    height: 250px;
+    width: 200px;
+    background: rgba(30, 42, 47, 0.75); 
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px); 
+    color: #ffffff;
+    border-radius: 12px;
+    align-content: center;
+    justify-items: center;
+}
+#ga_todayTime,#ga_todayCalories,#ga_todayStatus{
+    font-size: 28pt;
+    margin-bottom: 30px;
+}
+.ga_card p{
+    font-size: 18pt;
+}
+.Report{
+    height: 100vh;
+    align-content: center; 
+}
+.ga_chart {
+    height: 400px;
+}
+
+#ga_chart {
+    margin-left: 30px;
+    width: 1400px !important;
+    height: 500px !important;
+}
+.ga_history{
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(12px);
+    height: 480px;
+    width: 500px;
+    margin-top: 20px;
+    justify-self: center;
+    padding: 20px;       
+    display: flex;             
+    flex-direction: column;    
+    gap: 5px;                  
+    overflow-y: auto;   
+    border-radius: 12px;
+}
+.history-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 15px;
+    border-radius: 8px;
+
+    background: rgba(30, 42, 47, 0.6);
+    color: white;
+
+    font-size: 14px;
 }

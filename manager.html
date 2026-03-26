@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Managment System</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="back"></div>
+    <!-- navgation bar -->
+    <header>
+        <div class="nav_name">
+            <div><img src="logo.png" alt="document_icon" class="icon"></div>
+            <div>ENDURANCE <span class="description">Gym Management System</span></div>
+        </div>
+        <div class="nav_button">
+            <a href="#sEquipments">Equipments</a>
+            <a href="#sTrainers">Trainers</a>
+            <a href="#sSubscritions">Subscritions</a>
+        </div>
+
+    </header>
+<section id="sEquipments" class="Equipments">
+    <h1 class="gm_title">Equipment Maintenance</h1>
+    <div class="gm_glass">
+    <input id="gm_equipName" placeholder="Equipment Name">
+    <select id="gm_equipStatus">
+    <option>Working</option>
+    <option>Repair</option>
+    </select>
+    <button onclick="gm_addEquip()">Add</button>
+    <table>
+    <tr><th>Name</th><th>Status</th><th>Action</th></tr>
+    <tbody id="gm_equipList"></tbody>
+    </table>
+    </div>
+</section>
+<section id="sTrainers" class="Trainers">
+    <h1 class="gm_title">Member Subscription</h1>
+
+    <div class="gm_glass">
+    <input id="gm_memberName" placeholder="Name">
+    <input type="date" id="gm_startDate">
+    <input type="number" id="gm_days" placeholder="Days Plan">
+    <button onclick="gm_addMember()">Add</button>
+
+    <table>
+    <tr><th>Name</th><th>Days Left</th><th>Status</th></tr>
+    <tbody id="gm_memberList"></tbody>
+    </table>
+    </div>
+</section>
+<!-- TRAINERS -->
+<section id="sSubscritions" class="Subscritions">
+<h1 class="gm_title">Trainer Management</h1>
+
+<div class="gm_glass">
+<input id="gm_trainerName" placeholder="Trainer Name">
+<input id="gm_hours" placeholder="Working Hours">
+<input id="gm_payment" placeholder="Payment">
+<button onclick="gm_addTrainer()">Add</button>
+
+<table>
+<tr><th>Name</th><th>Hours</th><th>Payment</th></tr>
+<tbody id="gm_trainerList"></tbody>
+</table>
+</div>
+</section>
+</body>
+</html>

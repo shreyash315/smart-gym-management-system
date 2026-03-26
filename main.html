@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gym Managment System</title>
     <link rel="stylesheet" href="main.css">
-    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="main.js"></script>
 </head>
 <body>
     <div class="back"></div>
@@ -20,6 +21,8 @@
             <a href="#sTrainers">Trainers</a>
             <a href="#sSubscritions">Subscritions</a>
             <a href="#sAttendance">Attendance</a>
+            <a href="#ga_report">Report</a>
+            <a href="#ga_history">History</a>
         </div>
 
     </header>
@@ -69,5 +72,52 @@
 </table>
 </div>
 </section>
+<section id="sAttendance" class="Attendance">
+    <h1 class="gm_title">Attendance & Today</h1>
+
+    <div class="ga_flex">
+
+        <div class="ga_input ga_glass">
+            <input type="number" id="ga_time" placeholder="Workout Time">
+            <input type="number" id="ga_calories" placeholder="Calories">
+
+            <select id="ga_attendance">
+                <option value="Present">Present</option>
+                <option value="Absent">Absent</option>
+            </select>
+
+            <button class="ga_button" onclick="ga_saveData()">Save</button>
+        </div>
+
+        <div class="ga_cards">
+            <div class="ga_card ga_glass">
+                <h2 id="ga_todayTime">0</h2>
+                <p>Time</p>
+            </div>
+
+            <div class="ga_card ga_glass">
+                <h2 id="ga_todayCalories">0</h2>
+                <p>Calories</p>
+            </div>
+
+            <div class="ga_card ga_glass">
+                <h2 id="ga_todayStatus">-</h2>
+                <p>Status</p>
+            </div>
+        </div>
+
+    </div>
+    </section>
+    <section id="ga_report" class="Report">
+    <h1 class="gm_title">Weekly Report</h1>
+    <div class="ga_chart ga_glass">
+        <canvas id="ga_chart"></canvas>
+    </div>
+</section>
+<section id="ga_history" class="history">
+    <h1 class="gm_title">History</h1>
+    <div class="ga_history ga_glass" id="ga_historyList"></div>
+</section>
+
 </body>
 </html>
