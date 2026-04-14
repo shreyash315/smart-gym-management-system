@@ -48,7 +48,7 @@
                 <i class="fa-solid fa-lock"></i>
                 <input type="password" placeholder="Password" name="Password" id="password" class="textBox">
             </div>
-            <a href="main.html" class="loginButton">Login</a>
+            <button class="loginButton" onclick="handleLogin()">Login</button>
             <div class="forgot" onclick="openForgot()">Forgot Password?</div>
             <div class="noAccount">Don't have an account?<span onclick="flipCard()">Sign up</span></div>
         </div>
@@ -65,7 +65,7 @@
 
                 <div class="forgot-buttons">
                     <button onclick="closeForgot()">Cancel</button>
-                    <button class="send-btn">Send Link</button>
+                    <button class="send-btn" onclick="sendResetLink()">Send Link</button>
                 </div>
             </div>
         </div>
@@ -94,7 +94,7 @@
             <input type="password" placeholder="Password" class="textBox">
         </div>
 
-        <div class="loginButton">Sign Up</div>
+        <div class="loginButton" onclick="handleSignup()">Sign Up</div>
 
         <div class="noAccount">
             Already have an account?
